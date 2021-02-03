@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    </head>
+    <body class="w-75 mx-auto my-4">
+
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="İsminiz...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Emailiniz...">
+                <small class="form-text text-muted">Please enter a correct email</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Şifreniz...">
+            </div>
+            <div class="form-group">
+                <label for="citiy">City</label>
+                <select name="city" id="city" class="form-control">
+                    <option value="0">Kocaeli</option>
+                    <option value="1">Ankara</option>
+                    <option value="2">İstanbul</option>
+                    <option value="3">İzmir</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <legend>Hobbies</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Koşmak
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Futbol
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Okumak
+                    </label>
+                </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="ch">
+                <label class="custom-control-label" for="ch">Check</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="rd">
+                <label class="custom-control-label" for="rd">Check</label>
+            </div>
+            <div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="rd1" name="example">
+                    <label class="custom-control-label" for="rd1">Custom radio 1</label>
+                </div>  
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="rd2" name="example">
+                    <label class="custom-control-label" for="rd2">Custom radio 2</label>
+                </div>  
+            </div>
+            <div class="input-group">
+                <input type="text" class="from-control">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="ig">@gmail.com</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="ig">https://kurtbaris.com/</span>
+                </div>
+                <input type="text" class="from-control">
+            </div>
+            <div class="clearfix">
+                <div class="w-50 float-left">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="İsminiz...">
+                    </div>
+                </div>
+                <div class="w-50 float-left pl-2">
+                    <div class="form-group">
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" class="form-control" placeholder="Soyisminiz...">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

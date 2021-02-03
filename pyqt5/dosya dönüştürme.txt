@@ -1,0 +1,3 @@
+pyuic5 calculator.ui -o main_window.py
+
+pyuic5 /döünüştürülmek istenen dosya ismi /-o /dönüştürüldükten sonra oluşturulacak dosya ismi

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    </head>
+    <body class="container my-4">
+
+        <a href="#" class="btn btn-primary" data-toggle="popover" title="popover header" data-content="some content">Toggle popover</a>
+
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="top">Toggle popover</a>
+        <a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="right">Toggle popover</a>
+        <a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="left">Toggle popover</a>
+        <a href="#" class="btn btn-warning" data-toggle="popover" title="popover header" data-content="some content" data-placement="bottom">Toggle popover</a>
+
+        <br><br>
+
+        <a href="#" class="btn btn-primary" data-toggle="popover" title="popover header" data-content="some content" data-trigger="focus">Toggle popover</a>
+
+        <br><br>
+
+        <a href="#" id="btn_popover" class="btn btn-primary" data-toggle="popover" title="popover header" data-content="some content" data-trigger="hover">Toggle popover</a>
+
+        <br><br>
+
+        <button class="btn btn-success" type="button" onclick="show_popover()">Show</button>
+        <button class="btn btn-success" type="button" onclick="hide_popover()">Hide</button>
+        <button class="btn btn-success" type="button" onclick="toggle_popover()">Toggle</button>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                $('[data-toggle="popover"]').popover();
+            });
+
+            function show_popover(){
+                $("#btn_popover").popover("show");
+            }
+
+            function hide_popover(){
+                $("#btn_popover").popover("hide");
+            }
+
+            function toggle_popover(){
+                $("#btn_popover").popover("toggle");
+            }
+        </script>
+    </body>
+</html>

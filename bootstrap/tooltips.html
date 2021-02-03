@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    </head>
+    <body class="container my-4">
+
+        <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text">Hover over me</a>
+
+        <br><br>
+
+        <button id="btn_tooltip" class="btn btn-success" type="button" data-toggle="tooltip" title="<h3>Header</h3><br><p>Tooltip text</p>" data-html="true">Tooltip with html</button>
+
+        <br><br>
+
+        <p>
+            <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="top">Hover over me</a>
+            <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="right">Hover over me</a>
+            <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="left">Hover over me</a>
+            <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="bottom">Hover over me</a>
+        </p>
+
+        <br><br>
+
+        <p>
+            <button class="btn btn-warning" type="button" onclick="show_tooltip()">Show Tooltip</button>
+            <button class="btn btn-warning" type="button" onclick="hide_tooltip()">Hide Tooltip</button>
+            <button class="btn btn-warning" type="button" onclick="toggle_tooltip()">Toggle Tooltip</button>
+        </p>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            function show_tooltip(){
+                $("#btn_tooltip").tooltip("show");
+            }
+
+            function hide_tooltip(){
+                $("#btn_tooltip").tooltip("hide");
+            }
+
+            function toggle_tooltip(){
+                $("#btn_tooltip").tooltip("toggle");
+            }
+
+            $("#btn_tooltip").on("show.bs.tooltip", function(){
+                console.log("show...")
+            });
+
+            $("#btn_tooltip").on("shown.bs.tooltip", function(){
+                console.log("shown...")
+            });
+
+            $("#btn_tooltip").on("hide.bs.tooltip", function(){
+                console.log("hide...")
+            });
+
+            $("#btn_tooltip").on("hidden.bs.tooltip", function(){
+                console.log("hidden...")
+            });
+        </script>
+    </body>
+</html>
