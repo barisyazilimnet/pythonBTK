@@ -1,0 +1,3 @@
+Barış KURT:60, 70, 80
+Semih Acar:60, 80, 90
+Ali Topçu:50, 40, 30
